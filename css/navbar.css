@@ -210,4 +210,7 @@ label {
     #menu input:checked+label:before {
         content: "\00d7";
     }
+    #logo{
+        width: 100px;
+    }
 }

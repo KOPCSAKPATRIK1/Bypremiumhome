@@ -57,16 +57,6 @@ img {
 }
 
 /* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 
 .active, .dot:hover {
     background-color: #717171;
@@ -165,7 +155,7 @@ a:hover {
 
 /* Property card styles */
 .property-card {
-    border: 1px solid #ddd;
+    border: 3px solid #3DE0D2;
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
