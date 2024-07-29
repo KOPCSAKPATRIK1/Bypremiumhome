@@ -1,37 +1,45 @@
 body {
     margin: 0;
 }
-    
+
 #menu {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    /* Space between logo and menu items */
     border-bottom: 3px solid #3DE0D2;
-    padding: 10px 0;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); 
-
-/* Add shadow here */
+    padding: 10px 20px;
+    /* Added padding for better alignment */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
 }
-#menu ul, #menu li {
+
+
+#menu ul,
+#menu li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+label {
+    font-size: 30px;
+}
 #menu ul {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding: 0;
+    flex: 1 1 auto;
+    /* Allow menu to take remaining space */
 }
+
 #menu li {
-    display: inline-block;
     position: relative;
     padding: 0 10px;
 }
+
 #menu a {
     display: block;
     line-height: 42px;
@@ -41,10 +49,12 @@ body {
     font-size: 18px;
     text-align: left;
 }
+
 #menu a.dropdown-arrow:after {
     content: "\25BE";
     margin-left: 5px;
 }
+
 #menu li a:hover {
     color: #C8A47B;
     background: #F2F2F2;
@@ -61,7 +71,8 @@ body {
 }
 
 #menu label {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     text-align: center;
     position: relative;
     top: 0;
@@ -71,8 +82,9 @@ body {
 #menu label:before {
     font-size: 1.6em;
     color: #3DE0D2;
-    content: "\2261"; 
+    content: "\2261";
 }
+
 #menu ul.sub-menus {
     height: auto;
     overflow: hidden;
@@ -82,21 +94,74 @@ body {
     z-index: 99;
     display: none;
 }
+
 #menu ul.sub-menus li {
     display: block;
     text-align: left;
     width: 100%;
 }
+
 #menu ul.sub-menus a {
     color: #3DE0D2;
     font-size: 16px;
 }
+
 #menu li:hover ul.sub-menus {
     display: block;
 }
+
 #menu ul.sub-menus a:hover {
     background: #F2F2F2;
     color: #C8A47B;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    #menu ul {
+        background: #FFFFFF;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none;
+        text-align: left;
+        flex-direction: column;
+        /* Stack menu items vertically */
+    }
+
+    #menu ul.sub-menus {
+        width: 100%;
+        position: static;
+    }
+
+    #menu ul.sub-menus a {
+        padding-left: 30px;
+    }
+
+    #menu li {
+        display: block;
+        width: auto;
+    }
+
+    #menu label {
+        display: block;
+        margin: 10px auto;
+    }
+
+    #menu input:checked~ul {
+        display: block;
+    }
+
+    #menu input:checked+label:before {
+        content: "\00d7";
+    }
 }
 
 
@@ -105,6 +170,7 @@ body {
         position: relative;
         align-items: center;
     }
+
     #menu ul {
         background: #FFFFFF;
         position: absolute;
@@ -116,26 +182,32 @@ body {
         display: none;
         text-align: left;
     }
+
     #menu ul.sub-menus {
         width: 100%;
         position: static;
     }
+
     #menu ul.sub-menus a {
         padding-left: 30px;
     }
+
     #menu li {
         display: block;
         float: none;
         width: auto;
     }
+
     #menu label {
         display: block;
         margin: 10px auto;
     }
-    #menu input:checked ~ ul {
+
+    #menu input:checked~ul {
         display: block;
     }
-    #menu input:checked + label:before {
-        content: "\00d7"; 
+
+    #menu input:checked+label:before {
+        content: "\00d7";
     }
 }
