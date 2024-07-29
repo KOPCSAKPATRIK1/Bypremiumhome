@@ -1,19 +1,23 @@
 body {
     margin: 0;
 }
-
+    
 #menu {
-    background: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: 3px solid #3DE0D2;
+    padding: 10px 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); 
+
+/* Add shadow here */
 }
 #menu ul, #menu li {
     margin: 0;
-    padding: 10px;
+    padding: 0;
     list-style: none;
 }
 #menu ul {
@@ -21,6 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 #menu li {
     display: inline-block;
@@ -34,7 +39,7 @@ body {
     text-decoration: none;
     color: #3DE0D2;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
 }
 #menu a.dropdown-arrow:after {
     content: "\25BE";
@@ -54,18 +59,19 @@ body {
     opacity: 0;
     cursor: pointer;
 }
+
 #menu label {
-    display: none;
-    line-height: 42px;
+    display: none; /* Initially hidden */
     text-align: center;
-    position: absolute;
-    left: 35px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
 }
+
 #menu label:before {
     font-size: 1.6em;
     color: #3DE0D2;
     content: "\2261"; 
-    margin-left: 20px;
 }
 #menu ul.sub-menus {
     height: auto;
@@ -93,14 +99,11 @@ body {
     color: #C8A47B;
 }
 
-#logo {
-    width: 100px;
-    padding: 5px 10px;
-}
 
 @media screen and (max-width: 800px) {
     #menu {
         position: relative;
+        align-items: center;
     }
     #menu ul {
         background: #FFFFFF;
@@ -125,22 +128,14 @@ body {
         float: none;
         width: auto;
     }
-    #menu input, #menu label {
-        position: absolute;
-        top: 0;
-        left: 0;
+    #menu label {
         display: block;
-    }
-    #menu input {
-        z-index: 4;
-    }
-    #menu input:checked + label {
-        color: #3DE0D2;
-    }
-    #menu input:checked + label:before {
-        content: "\00d7";
+        margin: 10px auto;
     }
     #menu input:checked ~ ul {
         display: block;
+    }
+    #menu input:checked + label:before {
+        content: "\00d7"; 
     }
 }

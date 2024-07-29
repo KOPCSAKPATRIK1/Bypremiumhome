@@ -1,0 +1,41 @@
+<head>
+    <link rel="icon" href="assets/logo.svg" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<nav id="menu">
+    <img src="assets/logo3.jpg" id="logo" width="120">
+    <input type="checkbox" id="responsive-menu-checkbox">
+    <label id="responsive-menu" for="responsive-menu-checkbox" onclick="updatemenu()">
+    </label>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        <li><a class="dropdown-arrow" href="#">Szolgáltatások</a>
+            <ul class="sub-menus">
+                <li><a href="#">Energetikai tanusítvány</a></li>
+                <li><a href="#">Hitelügyintézés</a></li>
+                <li><a href="#">Értékbecslés</a></li>
+                <li><a href="#">Ügyvéd</a></li>
+                <li><a href="#">Ingatlan Bérbeadás</a></li>
+                <li><a href="#">Ingatlan Eladás</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Rólunk</a></li>
+    </ul>
+</nav>
+
+<script>
+    function updatemenu() {
+        const menu = document.getElementById('menu');
+        if (document.getElementById('responsive-menu-checkbox').checked) {
+            menu.style.borderBottomRightRadius = '0';
+            menu.style.borderBottomLeftRadius = '0';
+        } else {
+            menu.style.borderRadius = '0px';
+        }
+    }
+</script>
