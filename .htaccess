@@ -1,0 +1,12 @@
+Options +Multiviews
+
+RewriteEngine On
+
+# URL-ek kiterjesztés nélküli működtetése
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# URL-ek átirányítása a .html eltávolításához
+RewriteCond %{THE_REQUEST} \s(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]

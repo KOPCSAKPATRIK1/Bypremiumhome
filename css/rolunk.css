@@ -1,0 +1,28 @@
+.team-card {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.team-photo {
+    width: 100%;
+    height: auto;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #3DE0D2;
+}
+
+p {
+    color: #C8A47B;
+    font-weight: bold
+}
+
+h1 {
+    color: #C8A47B;
+}
+
+img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
