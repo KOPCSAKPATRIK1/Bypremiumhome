@@ -1,14 +1,11 @@
 // Data for properties
 const properties = [
     {
-        title: "Property 1",
-        location: "Address of property 1",
-        price: "$100,000",
-        size: "1000 sqft",
-        bedrooms: 3,
-        bathrooms: 2,
-        moreDetails: "more_details1.html",
-        landArea: "2000 sqft",
+        title: "Budapest I. kerület, Batthyány utca",
+        price: "119,90 millió Ft",
+        size: "88 m2",
+        rooms: "2 + 1 fél",
+        moreDetails: "https://ingatlan.com/34257612",
         images: [
             { src: "assets/Budapest I. kerület/kep.jpg", alt: "Image 1 Description" },
             { src: "assets/Budapest I. kerület/kep2.jpg", alt: "Image 2 Description" }
@@ -16,16 +13,14 @@ const properties = [
     },
     {
         title: "Property 2",
-        location: "Address of property 2",
         price: "$200,000",
         size: "1500 sqft",
-        bedrooms: 4,
-        bathrooms: 3,
+        rooms: 4,
         moreDetails: "more_details2.html",
         landArea: null,
         images: [
-            { src: "assets/Budapest I. kerület/kep3.jpg", alt: "Image 1 Description" },
-            { src: "assets/Budapest I. kerület/kep4.jpg", alt: "Image 2 Description" }
+            { src: "assets/Budapest I. kerület/kep3.jpg" },
+            { src: "assets/Budapest I. kerület/kep4.jpg"}
         ]
     }
 ];
@@ -48,13 +43,11 @@ function generatePropertyCards() {
                 <a class="prev" onclick="plusSlides(-1, ${index})">❮</a>
                 <a class="next" onclick="plusSlides(1, ${index})">❯</a>
             </div>
-            <p><strong>Location:</strong> <span>${property.location}</span></p>
-            <p><strong>Price:</strong> <span>${property.price}</span></p>
-            <p><strong>Size:</strong> <span>${property.size}</span></p>
-            <p><strong>Bedrooms:</strong> <span>${property.bedrooms}</span></p>
-            <p><strong>Bathrooms:</strong> <span>${property.bathrooms}</span></p>
+            <p><strong>Ár:</strong> <span>${property.price}</span></p>
+            <p><strong>Alapterület:</strong> <span>${property.size}</span></p>
+            <p><strong>Szobák:</strong> <span>${property.rooms}</span></p>
             ${property.landArea ? `<p><strong>Land Area:</strong> <span>${property.landArea}</span></p>` : ''}
-            <p><a href="${property.moreDetails}">More details</a></p>
+            <p><a href="${property.moreDetails}">További adatok</a></p>
         `;
         propertyList.appendChild(propertyCard);
     });
