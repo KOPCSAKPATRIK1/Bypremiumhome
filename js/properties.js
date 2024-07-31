@@ -5,22 +5,70 @@ const properties = [
         price: "119,90 millió Ft",
         size: "88 m2",
         rooms: "2 + 1 fél",
+        landArea: null,
         moreDetails: "https://ingatlan.com/34257612",
         images: [
-            { src: "assets/Budapest I. kerület/kep.jpg", alt: "Image 1 Description" },
-            { src: "assets/Budapest I. kerület/kep2.jpg", alt: "Image 2 Description" }
+            { src: "assets/Budapest-I.-kerulet/1.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/2.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/3.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/4.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/5.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/6.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/7.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/8.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/9.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/10.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/11.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/12.jfif", alt: "Budapest I. kerület" },
+            { src: "assets/Budapest-I.-kerulet/13.jfif", alt: "Budapest I. kerület" },
         ]
     },
     {
-        title: "Property 2",
-        price: "$200,000",
-        size: "1500 sqft",
-        rooms: 4,
-        moreDetails: "more_details2.html",
+        title: "Budapest XI. kerület, Budaörsi út",
+        price: "49,50 millió Ft",
+        size: "57 m2",
+        rooms: 2,
         landArea: null,
+        moreDetails: "https://ingatlan.com/34247478",
         images: [
-            { src: "assets/Budapest I. kerület/kep3.jpg" },
-            { src: "assets/Budapest I. kerület/kep4.jpg"}
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/1.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/2.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/3.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/4.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/5.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/6.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/7.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/8.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+            { src: "assets/Budapest-XI.-kerulet,-Budaorsi-ut/9.jfif", alt: "Budapest XI. kerület, Budaörsi út" },
+        ]
+    },
+    {
+        title: "Budapest XIX. kerület, Csíky utca",
+        price: "239,90 millió Ft",
+        size: "504 m2",
+        landArea: "706 m2",
+        rooms: 8,
+        moreDetails: "https://ingatlan.com/34248373",
+        images: [
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/1.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/2.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/3.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/4.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/5.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/6.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/7.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/8.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/9.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/10.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/11.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/12.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/13.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/14.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/15.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/16.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/17.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/18.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
+            { src: "assets/Budapest-XIX.-kerulet,-Csiky-utca/19.jfif", alt: "Budapest XIX. kerület, Csíky utca" },
         ]
     }
 ];
@@ -45,8 +93,8 @@ function generatePropertyCards() {
             </div>
             <p><strong>Ár:</strong> <span>${property.price}</span></p>
             <p><strong>Alapterület:</strong> <span>${property.size}</span></p>
+            ${property.landArea ? `<p><strong>Telekterület:</strong> <span>${property.landArea}</span></p>` : ''}
             <p><strong>Szobák:</strong> <span>${property.rooms}</span></p>
-            ${property.landArea ? `<p><strong>Land Area:</strong> <span>${property.landArea}</span></p>` : ''}
             <p><a href="${property.moreDetails}">További adatok</a></p>
         `;
         propertyList.appendChild(propertyCard);

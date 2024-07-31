@@ -16,6 +16,9 @@ body {
     /* Add shadow */
 }
 
+ #logo {
+    width: 100px;
+ }
 
 #menu ul,
 #menu li {
@@ -37,7 +40,6 @@ label {
 
 #menu li {
     position: relative;
-    padding: 0 10px;
 }
 
 #menu a {
