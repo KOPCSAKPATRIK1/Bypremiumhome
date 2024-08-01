@@ -23,12 +23,13 @@ body {
 .card-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #C8A47B;
+    color: #3DE0D2;
+    
     text-decoration: none;
 }
 
 .card-title:hover {
-    color: #3DE0D2;
+    color: #C8A47B;
 }
  .card-container{
     margin-bottom:  20px;
