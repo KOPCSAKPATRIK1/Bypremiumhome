@@ -16,6 +16,7 @@ img {
     max-width: 400px;
     position: relative;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 /* Next & previous buttons */
