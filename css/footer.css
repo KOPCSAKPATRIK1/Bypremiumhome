@@ -1,0 +1,28 @@
+#footer-container {
+    background-color: #3DE0D2;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+/* Adjust as needed */
+}
+
+#privacy-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#privacy-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Ensure the body has a bottom padding to accommodate the footer */
+body {
+    padding-bottom: 30px; /* Same as the footer height */
+}
