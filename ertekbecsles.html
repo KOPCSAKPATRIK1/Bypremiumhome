@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/kapcsolat.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
-    <link rel="icon" href="assets/logo-cropped.svg" type="image/x-icon">
-    <title>Kapcsolat</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ertekbecseles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="icon" href="assets/logo-cropped.svg" type="image/x-icon" />
+    <title>Értékbecslés</title>
+  </head>
+  <body>
     <div id="navbar-container"></div>
+    <div class="form-container">
+      <h1>Értékbecslés</h1>
+      <form id="contactForm">
+        <label for="name">Név</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email cím</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Telefonszám</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="message">Üzenet</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">ÜZENET KÜLDÉSE</button>
+      </form>
+    </div>
+
     <footer id="footer-container">
-        <a href="adatvedelem.html" id="privacy-link">Adatvédelem</a>
+      <a href="adatvedelem.html" id="privacy-link">Adatvédelem</a>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({
+          publicKey: "x9l56T3C-SAqbOCNh",
+        });
+      })();
+    </script>
+    <script src="js/sendEmail.js"></script>
     <script src="js/loadNavbar.js"></script>
     <script src="js/loadFooter.js"></script>
-</body>
+  </body>
 </html>
