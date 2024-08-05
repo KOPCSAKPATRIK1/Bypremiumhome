@@ -1,6 +1,25 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url('../assets/szolgaltatas-kepek/ertekbecsles16-9.webp');
+
+    /* Full height */
+    height: 40vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .form-container {
     max-width: 600px;
     margin: 50px auto;
@@ -8,6 +27,20 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: relative;
+    top: -70px; /* Adjust this value to control how much the form overlaps the parallax */
+    z-index: 0;
+}
+
+.title-container {
+    padding: 20px 30PX 20PX 30PX;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
 }
 .form-container h1 {
     text-align: center;

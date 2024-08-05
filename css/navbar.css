@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: white;
 }
 
 #menu {
@@ -20,6 +21,7 @@ body {
     width: 100px;
  }
 
+ 
 
 
 #menu ul,
